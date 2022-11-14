@@ -1,0 +1,157 @@
+.portafolio {
+  background-color: white;
+  width: 100%;
+  padding: 80px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/*-------------------------*/
+.proyecto-header {
+  width: 100%;
+  line-height: 32px;
+}
+
+.header-titulo {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  color: #ff675f;
+}
+
+.header-texto {
+  text-align: center;
+  font-size: 14px;
+  color: #84868d;
+}
+
+/*--------------------------*/
+
+.proyecto-galeria {
+  width: 100%;
+  text-align: center;
+}
+
+.proyecto {
+  background-color: #eeeeee;
+  margin: 30px 0px;
+  padding: 10px 10px;
+  border-radius: 16px;
+}
+
+.proyecto-logos {
+  width: 80%;
+  margin: 0px 0px 20px 0px;
+}
+
+.proyecto-titulo {
+  margin: 10px 0px;
+  font-size: 19px;
+  font-weight: bolder;
+  color: #474d5d;
+}
+
+.proyecto-texto {
+  margin: 20px 0px 20px 0px;
+  text-align: justify;
+  color: #84868d;
+  line-height: 18px;
+}
+
+.btn-proyecto {
+  border-style: none;
+  border: 1px solid #ff675f;
+  border-radius: 10px;
+  background-color: transparent;
+  width: 140px;
+  margin: 15px 15px 40px 0px;
+  padding: 5px;
+  color: #474d5d;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.btn-proyecto a {
+  text-decoration: none;
+  color: #474d5d;
+}
+
+.btn-proyecto a:visited {
+  color: #474d5d;
+}
+
+/*----------------------------------*/
+/*------------RESPONSIVE------------*/
+/*----------------------------------*/
+
+@media screen and (min-width: 575px) {
+  .portafolio {
+    padding-top: 100px;
+  }
+
+  .header-texto {
+    font-size: 16px;
+  }
+
+  .proyecto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .div-img {
+    width: 40%;
+  }
+  .div-descripcion {
+    width: 60%;
+  }
+
+  .proyecto-logos {
+    width: 100%;
+  }
+
+  .proyecto-titulo {
+    font-size: 25px;
+  }
+
+  .btn-proyecto {
+    margin: 20px 5px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .proyecto-header,
+  .proyecto-galeria {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*--------------------------*/
+
+  .proyecto-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .header-texto {
+    font-size: 16px;
+  }
+
+  .proyecto {
+    width: 45%;
+    flex-direction: column;
+  }
+
+  .div-img {
+    width: 100%;
+  }
+  .div-descripcion {
+    width: 100%;
+  }
+}

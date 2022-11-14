@@ -1,0 +1,163 @@
+.educacion {
+  background-color: #eeeeee;
+  width: 100%;
+  padding: 80px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+/*-------------------------*/
+.educacion-header {
+  width: 100%;
+  line-height: 38px;
+}
+
+.educacion-titulo {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  color: #ff675f;
+}
+
+.educacion-texto {
+  text-align: center;
+  font-size: 14px;
+  color: #84868d;
+}
+/*-------------------------*/
+.educacion-galeria {
+  width: 100%;
+  text-align: center;
+}
+
+.estudio {
+  margin: 30px 0px;
+  padding: 20px 10px 10px 10px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.estudio-fecha {
+  background-color: #ff675f;
+  width: 50%;
+  height: 32px;
+  padding: 5px;
+
+  margin: 30px auto;
+  font-size: 19px;
+  font-weight: 100;
+  color: white;
+}
+
+.estudio-logos {
+  width: 50%;
+  margin: 0px 0px 20px 0px;
+}
+
+.estudio-titulo {
+  margin: 10px 0px;
+  font-size: 19px;
+  font-weight: bolder;
+  color: #474d5d;
+}
+
+.estudio-universidad {
+  margin: 10px 0px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #474d5d;
+}
+
+.estudio-texto {
+  margin: 20px 0px 30px 0px;
+  text-align: justify;
+  color: #84868d;
+  line-height: 18px;
+}
+
+/*----------------------------------*/
+/*------------RESPONSIVE------------*/
+/*----------------------------------*/
+
+@media screen and (min-width: 575px) {
+  .educacion {
+    padding-top: 100px;
+  }
+  .educacion-texto {
+    font-size: 18px;
+  }
+
+  .estudio {
+    margin: 30px 0px;
+    padding: 20px 10px;
+
+    display: flex;
+  }
+
+  .div-fecha-img {
+    width: 50%;
+  }
+
+  #estudio-2 img {
+    width: 70%;
+  }
+
+  #estudio-3 img {
+    width: 40%;
+  }
+
+  .div-texto {
+    width: 50%;
+  }
+
+  .estudio-fecha {
+    height: 50px;
+    padding: 7px;
+    font-size: 22px;
+  }
+
+  .estudio-titulo {
+    margin: 15px 0px;
+    font-size: 25px;
+  }
+
+  .estudio-universidad {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .estudio-texto {
+    margin: 20px 0px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .educacion-header,
+  .educacion-galeria {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .educacion-texto {
+    font-size: 16px;
+  }
+
+  .div-fecha-img {
+    width: 35%;
+  }
+
+  #estudio-2 img {
+    width: 60%;
+  }
+
+  #estudio-3 img {
+    width: 30%;
+  }
+
+  .div-texto {
+    width: 65%;
+  }
+}

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>José Martínez | Front End Developer</title>
+
+    <link rel="icon" href="./img/favicon-page.jpg">
+    <link rel="apple-touch-icon" href="./img/favicon-page.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/sobre-mi.css" />
+    <link rel="stylesheet" href="./css/skills.css" />
+    <link rel="stylesheet" href="./css/portafolio.css" />
+    <link rel="stylesheet" href="./css/educacion.css" />
+    <link rel="stylesheet" href="./css/soft-skills.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/pie-pagina.css">
+  </head>
+  <body>
+    <header id="home" class="encabezado">
+      <figure id="fondo-home" class="encabezado-vista">
+        <picture id="imagen-fondo" class="imagen-principal">
+          <source
+            media="(min-width: 920px)"
+            srcset="./img/principal-desktop.jpg"
+          />
+          <source
+            media="(min-width: 575px)"
+            srcset="./img/principal-tablet.jpg"
+          />
+          <img
+            src="./img/principal-mobil.jpg"
+            alt="Imagen Principal de Fondo"
+          />
+        </picture>
+
+        <figcaption id="titulo" class="encabezado-titulo">
+          <span class="titulo-nombre">José Luis Martínez</span>
+          <span class="titulo-oficio"
+            >Maquetador Web | Desarrollador Front End | Desarrollador Java</span
+          >
+        </figcaption>
+      </figure>
+    </header>
+    <main>
+      <section id="barra-home" class="encabezado-barra">
+
+        <nav id="menu-cerrado" class="menu-cerrado-contenido">
+
+          <a href="#" class="menu-cerrado-texto">Menu</a>
+          
+          <button id="btn-abrir" class="menu-cerrado-boton" onClick= "menuHamburgesa()">
+            <img
+              class="menu-cerrado-icono"
+              src="./img/menu-barra.svg"
+              alt="Icono de barra menu"
+            />
+          </button>
+        </nav>
+
+        <nav id="menu-abierto" class="menu-abierto">
+            <a class="secciones" href="#home" onClick= "menuHamburgesa()">INICIO</a>
+            <a class="secciones" href="#sobre-mi" onClick= "menuHamburgesa()">SOBRE MÍ</a>
+            <a class="secciones" href="#herramientas" onClick= "menuHamburgesa()">HABILIDADES</a>
+            <a class="secciones" href="#portafolio" onClick= "menuHamburgesa()">PORTAFOLIO</a>
+            <a class="secciones" href="#educacion" onClick= "menuHamburgesa()">EDUCACIÓN</a>
+            <a class="secciones" href="#soft-skills" onClick= "menuHamburgesa()">HABILIDADES BLANDAS</a>
+            <a class="secciones" href="#contacto" onClick= "menuHamburgesa()">CONTACTO</a>
+        </nav>
+      </section>
+
+      <section id="sobre-mi" class="sobre-mi">
+
+        <div id="sobre-encabezado" class="sobre-encabezado">
+          <h2 class="sobre-titulo">Sobre Mí</h2>
+          <p class="sobre-texto">
+            Hola, soy José Luis. Me gusta leer, mecanografiar, codear y analizar datos.
+            Hace 16 años me gradue como ingeniero industrial, desde entonces he tratado de aprender mi oficio de buena manera. He aprendido que hacer las cosas bien hechas te trae satisfacción y si el esfuerzo se hace en equipo es mucho mejor.
+          </p>
+        </div>
+
+        <div id="sobre-contenido" class="sobre-contenido">
+          <div id="contenedor-contenido" class="contenedor-contenido">
+            <h3 id="contenido-titulo" class="contenido-titulo">
+              José Luis Martínez
+            </h3>
+
+            <h2 id="contenido-oficios" class="contenido-oficios">
+              Maquetador Web | Desarrollador FrontEnd | Desarrollador Java
+            </h2>
+
+            <p class="parrafo-cv">
+              Actualmente desarrollo proyectos web con tecnologias como: HTML, CSS, Bootstrap, JavaScript Vanilla, Angular y el ecosistema Java SE, Java EE y Spring.
+            </p>
+            <p class="parrafo-cv">
+              Si quieres saber más sobre mí, los proyectos en los que he trabajado, mi portafolio, mis estudios y la experiencia o conocimientos no relacionados con el desarrollo web; puedes descargar mi Curriculum Vitae en pdf o seguir aquí en mi pagina web.
+            </p>
+
+            <button id="btn-descargar" class="btn-descargar">
+              <a href="./pdf/HojaVida - Jose.pdf" target="_blank">
+                Descargar Curriculum PDF
+              </a>
+            </button>
+          </div>
+
+          <figure id="foto" class="foto">
+            <img src="./img/foto.jpg" alt="Fotografia del Desarrollador" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="herramientas" class="herramientas">
+
+        <div id="skill" class="skill">
+          <h2 id="skill-titulo" class="skill-titulo">Habilidades Tecnicas</h2>
+          <p id="skill-texto" class="skill-texto">
+            Soy bueno en estas tecnologías
+          </p>
+        </div>
+
+        <div id="skill-galeria" class="skill-galeria">
+          <div id="tarjeta-html" class="tarjeta">
+            <img
+              class="tarjeta-logos"
+              src="./img/logo-html.png"
+              alt="Logo de HTML5"
+            />
+            <h3 class="tarjeta-titulo">HTML 5</h3>
+            <p class="tarjeta-texto">
+              Construcción de interfaces graficas en entornos web con etiquetas HTML estructurales y etiquetas semanticas.
+            </p>
+          </div>
+
+          <div id="tarjeta-css" class="tarjeta">
+            <img
+              class="tarjeta-logos"
+              src="./img/logo-css.png"
+              alt="Logo de CSS3"
+            />
+            <h3 class="tarjeta-titulo">CSS 3</h3>
+            <p class="tarjeta-texto">
+              Construcción de estilos para las interfaces graficas, haciendo usos de selectores apropiados.
+            </p>
+          </div>
+
+          <div id="tarjeta-bootstrap" class="tarjeta">
+            <img
+              class="tarjeta-logos"
+              src="./img/logo-bootstrap.png"
+              alt="Logo de Bootstrap"
+            />
+            <h3 class="tarjeta-titulo">Bootstrap 5</h3>
+            <p class="tarjeta-texto">
+              Creación de interfaces graficas de usuarios con el framework mas usado.
+            </p>
+          </div>
+
+          <div id="tarjeta-javascript" class="tarjeta">
+            <img
+              class="tarjeta-logos"
+              src="./img/logo-javascript.png"
+              alt="Logo de JavaScript"
+            />
+            <h3 class="tarjeta-titulo">JavaScript 6</h3>
+            <p class="tarjeta-texto">
+              Aplicar dinamismo a paginas web, manejo de clases, objetos y estructuras de la programación orientada a objetos y aplicacion de asincronismo para comunicación back end y consumo de Apis.
+            </p>
+          </div>
+
+          <div id="tarjeta-git" class="tarjeta">
+            <img
+              class="tarjeta-logos"
+              src="./img/logo-git.png"
+              alt="Logo de GIT"
+            />
+            <h3 class="tarjeta-titulo">GIT</h3>
+            <p class="tarjeta-texto">
+              Manejo de control de versiones, creación de ramas, push, pull, merge, clone y creación de repositorios en GitHub.
+            </p>
+          </div>
+
+          <div id="tarjeta-vsc" class="tarjeta">
+            <img
+              class="tarjeta-logos"
+              src="./img/logo-VSC.png"
+              alt="Logo de Visual Studio Code"
+            />
+            <h3 class="tarjeta-titulo">Visual Studio Code</h3>
+            <p class="tarjeta-texto">
+              Manejo del IDE mas popular en el desarrollo web, con integración GIT, servidores locales y fake server backend.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portafolio" class="portafolio">
+
+        <div id="proyecto-header" class="proyecto-header">
+          <h2 id="header-titulo" class="header-titulo">Portafolio</h2>
+          <p id="header-texto" class="header-texto">
+            Estos son los proyectos que he trabajado
+          </p>
+        </div>
+
+        <div id="proyecto-galeria" class="proyecto-galeria">
+
+          <div id="proyecto-1" class="proyecto">
+            <div class="div-img">
+              <img
+              class="proyecto-logos"
+              src="./img/proyecto-1.png"
+              alt="Logo del proyecto encriptador"
+              />
+              <h3 class="proyecto-titulo">Encriptador de Texto</h3>
+            </div>
+
+            <div class="div-descripcion">
+              <p class="proyecto-texto">Proyecto web responsivo construido con la estrategia mobile first y con el patron de maquetación mostly fluid.</p>
+
+              <p class="proyecto-texto">Se sigue la estrutura semantica y estructural de HTML adecuada. Se logra la interacción dinamica con JavaScript y la minupulación del DOM</p>
+
+              <button id="btn-ver-1" class="btn-proyecto"> <a href="https://github.com/joseluismp1984/ONE-Challenge-1" target="_blank">Repositorio</a> </button>
+
+              <button id="btn-github-1" class="btn-proyecto"> <a href="https://joseluismp1984.github.io/ONE-Challenge-1/" target="_blank">Probar</a></button>
+            </div>
+          </div>
+
+          <div id="proyecto-2" class="proyecto">
+            <div class="div-img">
+              <img
+              class="proyecto-logos"
+              src="./img/proyecto-2.png"
+              alt="Logo del proyecto juego del ahorcado"
+              />
+              <h3 class="proyecto-titulo">Juego del Ahorcado</h3>
+            </div>
+            
+            <div class="div-descripcion">
+              <p class="proyecto-texto">Proyecto web responsivo construido con la estrategia mobile first.</p>
+
+              <p class="proyecto-texto">Se sigue la estrutura semantica y estructural de HTML adecuada. Se logra la interacción dinamica con JavaScript y la minupulación del DOM</p>
+
+              <p class="proyecto-texto">Se hace uso extesinvo de la manipulación del DOM con JavaScript Vanilla y el uso de la API Canvas de HTML para el dibujo de la horca.</p>
+
+              <button id="btn-ver-2" class="btn-proyecto"> <a href="https://github.com/joseluismp1984/ONE-Challenge-2" target="_blank">Repositorio</a> </button>
+
+              <button id="btn-github-2" class="btn-proyecto"> <a href="https://joseluismp1984.github.io/ONE-Challenge-2/" target="_blank">Probar</a></button>
+            </div>
+          </div>
+
+          <div id="proyecto-3" class="proyecto">
+            <div class="div-img">
+              <img
+              class="proyecto-logos"
+              src="./img/proyecto-3.png"
+              alt="Logo del proyecto landing page portafolio"
+              />
+              <h3 class="proyecto-titulo">Landing Page Portafolio</h3>
+            </div>
+            
+            <div class="div-descripcion">
+              <p class="proyecto-texto">Proyecto web responsivo construido con la estrategia mobile first.</p>
+
+              <p class="proyecto-texto">Se sigue la estrutura semantica y estructural de HTML adecuada. Se logra la interacción dinamica con JavaScript y la minupulación del DOM</p>
+
+              <p class="proyecto-texto">Se hace uso extesinvo de la manipulación del DOM con JavaScript Vanilla y el uso de la API Canvas de HTML para el dibujo de la horca.</p>
+
+              <button id="btn-ver-3" class="btn-proyecto"> <a href="https://github.com/joseluismp1984/ONE-Challenge-2" target="_blank">Repositorio</a> </button>
+
+              <button id="btn-github-3" class="btn-proyecto"> <a href="https://joseluismp1984.github.io/ONE-Challenge-2/" target="_blank">Probar</a></button>
+            </div>
+          </div>
+
+          <div id="proyecto-4" class="proyecto">
+            <div class="div-img">
+              <img
+              class="proyecto-logos"
+              src="./img/proyecto-4.png"
+              alt="Logo del proyecto Maquetación Clásica"
+              />
+              <h3 class="proyecto-titulo">Maquetación Clásica</h3>
+            </div>
+            
+            <div class="div-descripcion">
+              <p class="proyecto-texto">Proyecto web responsivo construido con la estrategia mobile first.</p>
+
+              <p class="proyecto-texto">Se sigue la estrutura semantica y estructural de HTML adecuada. Se logra la interacción dinamica con JavaScript y la minupulación del DOM</p>
+
+              <p class="proyecto-texto">Se hace uso extesinvo de la manipulación del DOM con JavaScript Vanilla y el uso de la API Canvas de HTML para el dibujo de la horca.</p>
+
+              <button id="btn-ver-4" class="btn-proyecto"> <a href="https://github.com/joseluismp1984/OW-MaquetacionClasica" target="_blank">Repositorio</a> </button>
+
+              <button id="btn-github-4" class="btn-proyecto"> <a href="https://joseluismp1984.github.io/OW-MaquetacionClasica/" target="_blank">Probar</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="educacion" class="educacion">
+        <div id="educacion-header" class="educacion-header">
+          <h2 id="educacion-titulo" class="educacion-titulo">
+            Educación & Certificados
+          </h2>
+          <p id="educacion-texto" class="educacion-texto">
+            Lo que he estudiado
+          </p>
+        </div>
+
+        <div id="educacion-galeria" class="educacion-galeria">
+
+          <div id="estudio-1" class="estudio">
+
+            <div class="div-fecha-img">
+              <h2 id="estudio-fecha-1" class="estudio-fecha">Enero 2023</h2>
+              <img
+              class="estudio-logos"
+              src="./img/logo-universidad-3.svg"
+              alt="Logo del bootcamp Alura"
+              />
+            </div>
+
+            <div class="div-texto">
+              <h3 class="estudio-titulo">Desarrollador Full Stack</h3>
+              <h3 class="estudio-universidad">Proyecto Oracle ONE</h3>
+              <p id="estudio-texto" class="estudio-texto">
+              BootCamp de tiempo completo en el cual durante 9 meses nos enseñaron las tecnologías HTML 5, CSS 3, JavaScript Vanilla, Diseño Responsivo, estrategia Mobile First, Java SE, Spring Framework, Cloud AWS, Python en Ciencia de Datos y SQL.
+              </p>
+              <p class="estudio-texto">
+              Se pusieron en practica los conocimientos en 5 retos practicos de desarrollo web, los cuales se muestran en el portafolio personal.
+              </p>
+            </div>
+            
+          </div>
+
+          <div id="estudio-2" class="estudio">
+            <div class="div-fecha-img">
+              <h2 id="estudio-fecha-2" class="estudio-fecha">Diciembre 2012</h2>
+              <img
+              class="estudio-logos"
+              src="./img/logo-universidad-2.png"
+              alt="Logo de Universedad Del Atlantico"
+              />
+            </div>
+
+            <div class="div-texto">
+              <h3 class="estudio-titulo">Especialista en Estadística Aplicada</h3>
+              <h3 class="estudio-universidad">Universidad del Atlántico</h3>
+              <p id="estudio-texto" class="estudio-texto">
+              Estudio de postgrado oficial de 1 año de duracion, en el cual se aprenden los fundamentos de la ciencia estadística y el modelamiento matematico de la incertidumbre.
+              </p>
+              <p class="estudio-texto">
+              Habilita para ejercer como Analista de datos, Consultor Estadístico e investigador, Docente de instituciones educativas.
+              </p>
+              <p class="estudio-texto">
+              Se dominaron las tecnologías: MicroSoft Excel, Lenguaje R, software StatGraphis y Minitab.
+              </p>
+            </div>
+          </div>
+
+          <div id="estudio-3" class="estudio">
+
+            <div class="div-fecha-img">
+              <h2 id="estudio-fecha-3" class="estudio-fecha">Diciembre 2006</h2>
+              <img
+                class="estudio-logos"
+                src="./img/logo-universidad-1.png"
+                alt="Logo Universidad Autonoma del Caribe"
+              />
+            </div>
+
+            <div class="div-texto">
+              <h3 class="estudio-titulo">Ingeniero Industrial</h3>
+              <h3 class="estudio-universidad">Universidad Autónoma del Caribe</h3>
+              <p id="estudio-texto" class="estudio-texto">
+                Estudio de pregrado de 5 años de duración, se aprendieron los fundamentos de la ingenieria. Se profundizaron conocimientos en Administración de operaciones, logistica, investigación de operciones y modelado estadistico.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="soft-skills" class="soft-skills">
+
+        <div id="soft-header" class="soft-header">
+          <h2 id="soft-titulo" class="soft-titulo">Habilidades Blandas</h2>
+          <p id="soft-texto" class="soft-texto">
+            En mis años de estudios y experiencia laboral he cultivado las siguientes destrezas 
+          </p>
+        </div>
+
+        <div id="soft-galeria" class="soft-galeria">
+          <div id="tarjeta-1" class="tarjeta-soft">
+            <img
+              class="tarjeta-soft-logos"
+              src="./img/icon-trabajo-equipo.svg"
+              alt="Logo trabajo en equipo"
+            />
+            <h3 class="tarjeta-soft-titulo">Trabajo En Equipo</h3>
+            <p class="tarjeta-soft-texto">
+              Tengo habilidad para interactuar con otros profesionales procurando cubrir las necesidades de todos y buscando siempre el bien del proyecto o la empresa.
+            </p>
+          </div>
+
+          <div id="tarjeta-2" class="tarjeta-soft">
+            <img
+              class="tarjeta-soft-logos"
+              src="./img/icon-comunicacion.svg"
+              alt="Logo comunicación asertiva"
+            />
+            <h3 class="tarjeta-soft-titulo">Comunicación Asertiva</h3>
+            <p class="tarjeta-soft-texto">
+              Tengo habilidad para exponer mis opiniones, comentarios de forma respetuosa, sin ofender ni herir a mis compañeros, evitando la generación de conflictos.
+            </p>
+          </div>
+
+          <div id="tarjeta-3" class="tarjeta-soft">
+            <img
+              class="tarjeta-soft-logos"
+              src="./img/icon-liderazgo.svg"
+              alt="Logo de liderazgo"
+            />
+            <h3 class="tarjeta-soft-titulo">Liderazgo</h3>
+            <p class="tarjeta-soft-texto">
+              Tengo la capacidad de tomar la iniciativa, gestionar, motivar y evaluar a un grupo de trabajo; llevandolo a cumplir con las metas atravez de un trabajo en conjunto y eficiente.
+            </p>
+          </div>
+
+          <div id="tarjeta-4" class="tarjeta-soft">
+            <img
+              class="tarjeta-soft-logos"
+              src="./img/icon-adaptabilidad.svg"
+              alt="Logo de adaptabilidad"
+            />
+            <h3 class="tarjeta-soft-titulo">Adaptación al Cambio</h3>
+            <p class="tarjeta-soft-texto">
+              Tengo la capacidad para asumir los cambios que se generan en un proyecto sin que esto altere el alcance y objetivos que se han propuesto con antelación.
+            </p>
+          </div>
+
+          <div id="tarjeta-5" class="tarjeta-soft">
+            <img
+              class="tarjeta-soft-logos"
+              src="./img/icon-pensamiento-analitico.svg"
+              alt="Logo de pensamiento analitico"
+            />
+            <h3 class="tarjeta-soft-titulo">Pensamiento Analitico Y Crítico</h3>
+            <p class="tarjeta-soft-texto">
+              Tengo la capacidad de recopilar información y analizarla a fondo. Para poder resolver los problemas planteados del proyecto y tomar buenas decisiones basadas en conocimientos extraídos de la información disponible.
+            </p>
+          </div>
+
+          <div id="tarjeta-6" class="tarjeta-soft">
+            <img
+              class="tarjeta-soft-logos"
+              src="./img/icon-auto-aprendizaje.svg"
+              alt="Logo de Auto-Aprendizaje"
+            />
+            <h3 class="tarjeta-soft-titulo">Auto-Aprendizaje Rápido</h3>
+            <p class="tarjeta-soft-texto">
+               Tengo la habilidad de adquirir conocimientos sin depender de un instructor o guía, desarrollo mis capacidades por mi cuenta y a mi propio ritmo.
+            </p>
+          </div>
+      </section>
+
+      <section id="contacto" class="contacto">
+
+        <form id="formulario" class="formulario" action="https://formsubmit.co/joseluismp1984@gmail.com" method="post">
+
+          <h2 id="formulario-titulo" class="formulario-titulo">Contactame !</h2>
+
+          <input id="formulario-nombre" class="formulario-nombre" type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="solo acepta letras y espacios en blanco" autocomplete="off" required minlength="6" maxlength="35">
+
+          <input id="formulario-email" class="formulario-email" type="email" name="correo" placeholder="Escribe tu e-mail" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="formato de correo invalido" autocomplete="off" required minlength="12" maxlength="35">
+
+          <textarea name="mensaje" id="mensaje" class="mensaje" cols="23" rows="5" placeholder="Escribe tu mensaje" autocomplete="off" required minlength="10" maxlength="500"></textarea>
+
+          <input id="enviar" class="enviar" type="submit" value="Enviar Mensaje">
+        </form>
+
+      </section>
+    </main>
+    <footer id="pie-pagina" class="pie-pagina">
+
+      <p id="pie-texto" class="pie-texto">Ing. José Luis Martínez</p>
+
+      <figure class="foot-logos">
+        <picture class="foot-github">
+          <a href="https://github.com/joseluismp1984" target="_blank"
+            ><img src="./img/logo-github.svg" alt="Logo GitHub con enlace"
+            title:="https://github.com/joseluismp1984" /></a
+          >
+        </picture>
+
+        <picture class="foot-linkedin">
+          <a
+            href="https://www.linkedin.com/in/jose-luis-martinez-palmeth-2686097b/"
+            target="_blank"
+            ><img src="./img/logo-linkedin.svg" alt="Logo LinkInd con enlace"
+            title:="https://www.linkedin.com/in/jose-luis-martinez-palmeth-2686097b/"></a
+          >
+        </picture>
+      </figure>
+    </footer>
+    <script src="./code/home.js"></script>
+  </body>
+</html>

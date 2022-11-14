@@ -1,0 +1,136 @@
+.soft-skills {
+  background-color: #2bb3dd;
+  width: 100%;
+  padding: 80px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/*---------------------------*/
+
+.soft-header {
+  line-height: 16px;
+}
+
+.soft-titulo {
+  color: #ffffff;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+}
+
+.soft-texto {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/*-----------------------------*/
+.tarjeta-soft {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.tarjeta-soft-logos {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.tarjeta-soft-titulo {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+.tarjeta-soft-texto {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 18px;
+}
+
+/*----------------------------*/
+#tarjeta-1 {
+  background-color: orangered;
+}
+
+#tarjeta-2 {
+  background-color: crimson;
+}
+
+#tarjeta-3 {
+  background-color: darkgreen;
+}
+
+#tarjeta-4 {
+  background-color: darkorchid;
+}
+
+#tarjeta-5 {
+  background-color: darkred;
+}
+
+#tarjeta-6 {
+  background-color: darkslategray;
+}
+
+/*----------------------------------*/
+/*------------RESPONSIVE------------*/
+/*----------------------------------*/
+
+@media screen and (min-width: 575px) {
+  .soft-skills {
+    padding-top: 100px;
+  }
+
+  .soft-titulo {
+    font-size: 36px;
+  }
+
+  .soft-texto {
+    font-size: 18px;
+  }
+
+  .soft-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    justify-content: space-evenly;
+  }
+
+  .tarjeta-soft {
+    width: 45%;
+  }
+
+  .tarjeta-soft-titulo {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .soft-header,
+  .soft-galeria {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .soft-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    justify-content: space-evenly;
+  }
+
+  .tarjeta-soft {
+    width: 30%;
+  }
+}

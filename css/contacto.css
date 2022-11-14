@@ -1,0 +1,78 @@
+.contacto {
+  background-color: #474d5d;
+  width: 100%;
+  padding: 80px 15px;
+}
+
+.formulario {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+  color: white;
+}
+
+.formulario-titulo {
+  color: white;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+
+.formulario-nombre {
+  border-style: none;
+  color: #474d5d;
+  background-color: rgb(232, 240, 254);
+  height: 50px;
+  padding: 15px 30px;
+  font-size: 17px;
+}
+
+.formulario-email {
+  border-style: none;
+  color: #474d5d;
+  background-color: rgb(232, 240, 254);
+  height: 50px;
+  padding: 15px 30px;
+  font-size: 17px;
+}
+
+.mensaje {
+  color: #474d5d;
+  border-style: none;
+  background-color: rgb(232, 240, 254);
+  height: 100px;
+  padding: 15px 30px;
+  font-size: 17px;
+  overflow-y: scroll;
+}
+
+.enviar {
+  border-style: none;
+  background-color: #ff675f;
+  color: white;
+  font-size: 16px;
+  width: 150px;
+  height: 50px;
+  align-self: flex-end;
+}
+
+.mensaje,
+.formulario-email,
+.enviar,
+.formulario-nombre:focus {
+  outline: none;
+}
+
+/*----------------------------------*/
+/*------------RESPONSIVE------------*/
+/*----------------------------------*/
+
+@media screen and (min-width: 920px) {
+  .formulario {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
